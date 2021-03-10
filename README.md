@@ -3,6 +3,16 @@
 The diff finder application, is a REST api written in Java under Spring framework.
 The basic functionality of the application is to provide an endpoint in which a user can load binary JSON strings and compare Left and Right JSON objects.
 
+## Some definitions
+The applicaiton accepts only Base64 encoded JSON strings. If any other type of content is submitted, it will return an error.
+
+In order to fulfill the requirements of the excercise, the difference it will provide between Left and Right items is as follows.
+
+- If both items are equal, it will return the decoded JSON content of them.
+- If the items are different it will return a JSON object containing each node where values are different and each node any of the items have that the oter one does not have.
+- Different vales from nodes will be displayed: `{"key": "(leftValue, rightValue)"}`.
+- Nodes not contained on any of both Items will show as: `{"key": "value"}`
+
 ## Installation
 
 In order to install the application, it is required to have JDK 11 installed alongside with MVN.
