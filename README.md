@@ -60,3 +60,4 @@ Some of the changes I would make include:
 - Provide more details on the differences between JSON objects.
 - Provide better Exception handling - Throwing exceptions and caching them in the last layer is not a great practice!
 - Better documented Swagger (api-docs).
+- Provide a Dockerfile and container ready configuration.
